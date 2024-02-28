@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: black;
+        }
+        .box1 {
+            padding: 50px;
+            background-color: yellow;
+			font: italic;  
+			border: 2px solid white;
+        }
+		.box2 {
+			padding: 50px;
+			background-color: gray;
+			border: 3px solid black;
+			}
+		input[type="text"],
+        input[type="password"],
+        textarea {
+            width: 50%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            background-color: gray;
+            outline: none;
+        }
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .registerbtn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <form>
+		<div class="box1">
+		<center><h1 style="font-family: 'comic sans MS', cursive;" > Consumer Engagement in Healthcare</h1></center>
+			<ol>
+				<li> Understand what consumer-centric is and how it can provide better outcomes and enhance profitability for a healthcare organization. </li>
+				<br>
+				<li> Identify and evaluate the physical environment and integrate improvements that are more patient friendly.  </li>
+				<br>
+				<li> Introduce the concept of consumer-centric healthcare models that prioritize patient needs, preferences, and experiences.  </li>
+				<br>
+				<li> Highlight the importance of addressing disparities in healthcare access and outcomes, particularly among the community served and more focus on the underserved. </li>
+				<br>
+				<li> Discuss barriers to consumer engagement and how these barriers impact individual’s ability to actively participate in their healthcare decisions and navigate the healthcare system effectively.</li>
+				<br>
+				<li> Establish mechanisms/evaluation tools for ongoing feedback to continue to enhance consumer centric approaches within the healthcare organization and community. </li>
+			</ol>
+		</div>
+        <div class="box2">
+            <center><h1 style="border: 2px solid white;">Registration Form</h1></center>
+            <hr>
+            <label>First Name</label>
+            <input type="text" name="First Name" placeholder="First name" required>
+			<br>
+            <label>Middle Initial:</label>
+            <input type="text" name="Middle Initial" placeholder="Middle initial" required>
+			<br>
+            <label>Last Name:</label>
+            <input type="text" name="Last Name" placeholder="Last name" required>
+			<br>
+			 <label>Email Address:</label>
+            <input type="email" name="Email" placeholder="email" required>
+            <!-- Add more fields as needed -->
+            <div>
+                <label>Course:</label>
+                <select>
+                    <option value="Course">Course</option>
+                    <option value="BCA">Healthcare Consumer Engagement</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more fields as needed -->
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+        <div class="container signin">
+            <p>Already have an account? <a href="#">Sign in</a></p>
+        </div>
+    </form>
+</body>
+</html>
